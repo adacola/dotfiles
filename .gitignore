@@ -1,0 +1,9 @@
+# F#
+.ionide
+
+# local temporary file
+*.localbak.*
+*.ignorefile.*
+
+# editor
+.vscode/
