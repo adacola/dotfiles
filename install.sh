@@ -5,3 +5,5 @@ for file in .gitignore_global .bash_aliases
 do
 	[ ! -e $file ] && ln -s ~/dotfiles/$file $file
 done
+
+ln -s ~/dotfiles/.gitignore_global .gitignore
