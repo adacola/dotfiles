@@ -1,38 +1,55 @@
 [user]
-	name = adacola
-	email = adacola255@gmail.com
+        name = adacola
+        email = adacola255@gmail.com
+[core]
+        excludesfile = ~/.gitignore_global
 [merge]
-	ff = false
+        ff = false
 [pull]
-	ff = only
+        ff = only
+[fetch]
+        prune = true
 [alias]
-	s = status
-	w = switch
-	a = add
-	aa = add -A
-	unstage = reset HEAD
-	c = commit -m
-	amend = commit --amend
-	b = branch
-	create = switch -c
-	wm = switch master
-	wma = switch main
-	wd = switch develop
-	d = diff
-	dh = diff HEAD
-	dh1 = diff HEAD~1
-	dh2 = diff HEAD~2
-	dm = diff master
-	dma = diff main
-	dd = diff develop
-	pl = pull
-	plo = pull origin
-	plom = pull origin master
-	ploma = pull origin main
-	plod = pull origin develop
-	f = fetch
-	mergef = merge --ff
-	l = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M'
-	ll = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad - %ar%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M' --graph
+        s = status
+        w = switch
+        a = add
+        aa = add -A
+        unstage = reset HEAD
+        c = commit -m
+        amend = commit --amend
+        b = branch
+        create = switch -c
+        wm = switch master
+        wma = switch main
+        wd = switch develop
+        cp = cherry-pick
+        d = diff
+        dh = diff HEAD
+        dh1 = diff HEAD~1
+        dh2 = diff HEAD~2
+        dm = diff master
+        dma = diff main
+        dd = diff develop
+        pl = pull
+        plo = pull origin
+        plom = pull origin master
+        ploma = pull origin main
+        plod = pull origin develop
+        f = fetch -p
+        mg = merge
+        mgf = merge --ff
+        rb = rebase
+        rbi = rebase -i
+        pl = pull
+        plo = pull origin
+        plom = pull origin master
+        ploma = pull origin main
+        bm = branch --merged
+        bnm = branch --no-merged
+        rename = branch -m
+        remove = branch -d
+        pushf = push --force-with-lease --force-if-includes
+        l = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M'
+        ll = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad - %ar%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M' --graph
 [includeIf "gitdir:~/workspaces/"]
-  	path = ~/workspaces/.gitconfig
+        path = ~/workspaces/.gitconfig
