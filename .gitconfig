@@ -1,8 +1,6 @@
 [user]
         name = adacola
         email = adacola255@gmail.com
-[core]
-        excludesfile = ~/.gitignore_global
 [merge]
         ff = false
 [pull]
@@ -51,5 +49,3 @@
         pushf = push --force-with-lease --force-if-includes
         l = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M'
         ll = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad - %ar%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M' --graph
-[includeIf "gitdir:~/workspaces/"]
-        path = ~/workspaces/.gitconfig
