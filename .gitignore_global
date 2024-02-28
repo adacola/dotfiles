@@ -8,6 +8,7 @@
 
 # local temporary dir
 *.ignoredir/
+*.exclude/
 
 # editor
 .vscode/
