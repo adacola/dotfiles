@@ -12,3 +12,6 @@
 
 # editor
 .vscode/
+
+# dotenvx
+.env.keys
