@@ -46,6 +46,7 @@
         bnm = branch --no-merged
         rename = branch -m
         remove = branch -d
+        remove-force = branch -D
         pushf = push --force-with-lease --force-if-includes
         l = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M'
         ll = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad - %ar%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M' --graph
