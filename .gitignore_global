@@ -5,6 +5,7 @@
 *.localbak.*
 *.ignorefile.*
 *.ignorefile
+*.ignorelink
 
 # local temporary dir
 *.ignoredir/
