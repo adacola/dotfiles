@@ -1,6 +1,8 @@
 [user]
         name = adacola
         email = adacola255@gmail.com
+[core]
+        editor = vim
 [merge]
         ff = false
 [pull]
