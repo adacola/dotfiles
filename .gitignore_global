@@ -18,5 +18,8 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# env
+.env
+
 # dotenvx
 .env.keys
