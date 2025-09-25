@@ -18,6 +18,7 @@
         c = commit -m
         amend = commit --amend
         b = branch
+        ba = branch -a
         create = switch -c
         wm = switch master
         wma = switch main
