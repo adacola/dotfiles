@@ -10,7 +10,8 @@
 [fetch]
         prune = true
 [alias]
-        s = status
+        s = status -s
+        ss = status
         w = switch
         a = add
         aa = add -A
