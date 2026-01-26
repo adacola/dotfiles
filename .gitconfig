@@ -39,9 +39,9 @@
         plod = pull origin develop
         f = fetch -p
         mg = merge
-        mgf = merge --ff
+        mf = merge --ff
         rb = rebase
-        rbi = rebase -i
+        ri = rebase -i
         pl = pull
         plo = pull origin
         plom = pull origin master
@@ -54,5 +54,7 @@
         pushf = push --force-with-lease --force-if-includes
         l = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M'
         ll = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad - %ar%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M' --graph
+	suba = submodule add
+	subu = submodule update
 [includeIf "gitdir:~/workspaces/"]
         path = ~/workspaces/.gitconfig
