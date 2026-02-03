@@ -56,5 +56,6 @@
         ll = log --pretty=format:'%C(yellow)%h%Creset [%Cgreen%ad - %ar%Creset] %s %Cblue[%an]%Creset %Cred%d' --date=format:'%Y-%m-%d %H:%M' --graph
 	suba = submodule add
 	subu = submodule update
+	cl = clone --recursive
 [includeIf "gitdir:~/workspaces/"]
         path = ~/workspaces/.gitconfig
