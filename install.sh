@@ -7,3 +7,6 @@ do
 done
 mkdir -p ~/.config/git
 cp ~/dotfiles/.gitignore_global ~/.config/git/ignore
+
+mkdir -p ~/.claude
+cp ~/dotfiles/claude-file-suggestion.sh ~/.claude/
