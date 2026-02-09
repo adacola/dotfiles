@@ -9,11 +9,12 @@ done
 
 echo ".gitignore_global を ~/.config/git/ignore にコピー"
 mkdir -p ~/.config/git
-cp ~/dotfiles/.gitignore_global ~/.config/git/ignore
+[ ! -e ~/.config/git/ignore ] && cp ~/dotfiles/.gitignore_global ~/.config/git/ignore
 
 echo "Claude Codeのファイル名補完スクリプトを ~/.claude/ にコピー"
 mkdir -p ~/.claude
 cp ~/dotfiles/claude-file-suggestion.sh ~/.claude/
 
 echo "Claude Codeのファイル名補完スクリプト実行に必要なコマンドをインストール"
-sudo apt update && sudo apt install fd-find fzf && ln -s $(which fdfind) ~/.local/bin/fd
+sudo apt update && sudo apt install fd-find fzf
+[ ! -e ~/.local/bin/fd ] && ln -s $(which fdfind) ~/.local/bin/fd
