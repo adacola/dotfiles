@@ -15,7 +15,7 @@
         w = switch
         a = add
         aa = add -A
-        unstage = reset HEAD
+        unstage = restore --staged
         c = commit -m
         amend = commit --amend
         b = branch
