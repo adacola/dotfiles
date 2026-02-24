@@ -26,3 +26,5 @@
 
 # log file
 *.log
+
+**/.claude/settings.local.json
