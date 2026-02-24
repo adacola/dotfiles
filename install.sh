@@ -21,7 +21,7 @@ sudo apt update && sudo apt install -y fd-find fzf
 
 echo "tmux をインストール"
 sudo apt install -y tmux
-[ ! -e ~/.config/tmux/tmux.conf ] && mkdir -p ~/.config/tmux/plugins && cp ~/dotfiles/tmux.conf ~/.config/tmux/
+[ ! -e ~/.config/tmux/tmux.conf ] && mkdir -p ~/.config/tmux/plugins && ln -s ~/dotfiles/tmux.conf ~/.config/tmux/tmux.conf
 [ ! -d ~/.config/tmux/plugins/tpm ] && git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
 echo ""
