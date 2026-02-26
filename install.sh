@@ -7,9 +7,9 @@ do
 	[ ! -e $file ] && ln -s ~/dotfiles/$file $file
 done
 
-echo ".gitignore_global を ~/.config/git/ignore にコピー"
+echo ".gitignore_global のシンボリックリンクを ~/.config/git/ignore に作成"
 mkdir -p ~/.config/git
-[ ! -e ~/.config/git/ignore ] && cp ~/dotfiles/.gitignore_global ~/.config/git/ignore
+[ ! -e ~/.config/git/ignore ] && ln -s ~/dotfiles/.gitignore_global ~/.config/git/ignore
 
 echo "Claude Codeのファイル名補完スクリプトを ~/.claude/ にコピー"
 mkdir -p ~/.claude
