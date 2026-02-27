@@ -16,7 +16,7 @@ mkdir -p ~/.claude
 cp ~/dotfiles/claude-file-suggestion.sh ~/.claude/
 
 echo "Claude Codeのファイル名補完スクリプト実行に必要なコマンドをインストール"
-sudo apt update && sudo apt install -y fd-find fzf
+sudo apt update && sudo apt install -y fd-find fzf ripgrep
 [ ! -e ~/.local/bin/fd ] && ln -s $(which fdfind) ~/.local/bin/fd
 
 echo "tmux をインストール"
