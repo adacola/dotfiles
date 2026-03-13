@@ -16,7 +16,7 @@ mkdir -p ~/.claude
 cp ~/dotfiles/claude-file-suggestion.sh ~/.claude/
 
 echo "devconteiner内でClaude Codeのユーザー設定を共通化するためにユーザー名の相違を解決"
-[ "$(whoami)" = "vscode" ] && sudo mkdir -p /home/adacola && sudo chown vscode: /home/adacola && ln -s ~/.claude /home/adacola/.claude
+[ "$REMOTE_CONTAINERS" = "true" ] && sudo mkdir -p /home/adacola && sudo chown $(whoami): /home/adacola && ln -s ~/.claude /home/adacola/.claude
 
 echo "Claude Codeのファイル名補完スクリプト実行に必要なコマンドをインストール"
 sudo apt update && sudo apt install -y fd-find fzf ripgrep
