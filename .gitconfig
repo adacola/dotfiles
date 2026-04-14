@@ -19,6 +19,7 @@
         c = commit -m
         ca = commit -a -m
         amend = commit --amend
+        amenda = commit -a --amend
         b = branch
         ba = branch -a
         create = switch -c
