@@ -17,6 +17,7 @@
         aa = add -A
         unstage = restore --staged
         c = commit -m
+        ca = commit -a -m
         amend = commit --amend
         b = branch
         ba = branch -a
