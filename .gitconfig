@@ -3,6 +3,7 @@
         email = adacola255@gmail.com
 [core]
         editor = vim
+        quotepath = false
 [merge]
         ff = false
 [pull]
