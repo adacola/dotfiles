@@ -36,3 +36,6 @@ docs/superpowers/plans/
 **/.claude/.cc-writes/
 **/.playwright-mcp/
 
+# codegraph
+.codegraph/
+
