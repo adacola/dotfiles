@@ -39,3 +39,7 @@ docs/superpowers/plans/
 # codegraph
 .codegraph/
 
+# graphify
+# 個人的使用のためにとりあえず無効化対象としておき、チームで使用したい場合のみ手動でaddする運用
+graphify-out/
+
