@@ -10,6 +10,8 @@
         ff = only
 [fetch]
         prune = true
+[init]
+        defaultBranch = main
 [alias]
         s = status -s
         ss = status
@@ -28,6 +30,7 @@
         wma = switch main
         wd = switch develop
         cp = cherry-pick
+        sw = show
         d = diff
         dh = diff HEAD
         dh1 = diff HEAD~1
