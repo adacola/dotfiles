@@ -63,5 +63,7 @@
 	suba = submodule add
 	subu = submodule update
 	cl = clone --recursive
+        cls = clone --depth 1
+        unshallow = fetch --unshallow
 [includeIf "gitdir:~/workspaces/"]
         path = ~/workspaces/.gitconfig
